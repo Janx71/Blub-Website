@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blub - Rating</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="top-bar.css">
+    
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrapper">
+        
+            <!-- Top Bar -->
+            <div class="top-bar">
+            <a href="#" class="logo">Player Rating</a>
+                <ul class="nav-menu">
+                    <li><a href="home.html">Player Rating</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="https://github.com/janx71">Github</a></li>
+                </ul>
+            </div>
+            <!-- Top Bar End -->
+            
+            <div class="main-wrapper">
+            
+                <!-- Search Container -->
+                <div class="search-container">
+                    <label for="search-input"></label><input type="text" id="search-input" placeholder="Search... (Not working)">
+                    <button id="search-btn">Search</button>
+                </div>
+                <!-- Search Container End -->
+                
+                <!-- Output Header -->
+                <div id="header-container">
+                    <div class="text-spot-1">Place</div>
+                    <div class="text-spot-2">Player</div>
+                    <div class="text-spot-3">Upvotes</div>
+                    <div class="text-spot-4">Downvotes</div>
+                    <div class="text-spot-5">Score</div>
+                </div>
+                <!-- Output Header End -->
+            
+                <!-- Output Container -->
+                <div class="output-container" id="output-container"></div>
+                <script src="script.js"></script>
+                <!-- Output Container End -->
+            
+                <!-- Pagination -->
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button type="button" id="prev-page" onclick="prevPage()"><</button>
+                    <button type="button" id="jump-page1" onclick="setPage(1)">1</button>
+                    <button type="button" id="jump-page2" onclick="setPage(2)">2</button>
+                    <button type="button" id="jump-page3" onclick="setPage(3)">3</button>
+                    <button type="button" id="jump-page4" onclick="setPage(4)">4</button>
+                    <button type="button" id="jump-page5" onclick="setPage(5)">5</button>
+                    <button type="button" id="jump-page6" onclick="setPage(6)">6</button>
+                    <button type="button" id="jump-page7" onclick="setPage(7)">7</button>
+                    <button type="button" id="jump-page8" onclick="setPage(8)">8</button>
+                    <button type="button" id="jump-page9" onclick="setPage(9)">9</button>
+                    <button type="button" id="jump-page10" onclick="setPage(10)">10</button>
+                    <button type="button" id="next-page" onclick="nextPage()">></button>
+                </div>
+
+            </div>
+            </div>
+        
+        </div>
+        <div class="footer">
+            <p class="footer-text">Copyright &copy; 2023 Blub. All rights reserved.</p>
+        </div>
+</body>
+</html>
