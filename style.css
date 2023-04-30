@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #121212;
+}
+
+.page-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100%;
+}
+
+.content-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-wrapper {
+    width: 65%;
+    margin: 2vh auto;
+}
+
+/* Start of Search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-top: 4vh;
+    width: 100%;
+}
+    
+#search-input {
+    padding: 0.5vh 1vh;
+    font-size: 1.5vw;
+    width: 60%;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+}
+
+#search-btn {
+        padding: 0.5vh 1vh;
+        font-size: 1.5vw;
+        background-color: #777;
+        color: #222;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+#search-btn:hover {
+    background-color: #999;
+}
+
+/* End of Search bar */
+
+/* Start of Output */
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.2vh 1vh;
+    font-size: 1.5vw;
+    color: #fff;
+    border-top: 0.2vh solid #999;
+    border-left: 0.2vh solid #999;
+    border-right: 0.2vh solid #999;
+    border-radius: 0.8vh 0.8vh 0 0;
+}
+
+
+#output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 0.2vh solid #999;
+    border-right: 0.2vh solid #999;
+}
+
+.rectangle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #333;
+    padding: 1vh;
+    font-size: 1.5vw;
+    border-radius: 0.8vh;
+    color: #fff;
+    margin-bottom: 1vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.text-spot-1 {
+    width: 5%;
+    text-align: center;
+}
+
+.text-spot-2 {
+    width: 45%;
+    text-align: left;
+    text-indent: 5vh;
+}
+
+.text-spot-3 {
+    width: 20%;
+    text-align: center;
+}
+
+.text-spot-4 {
+    width: 20%;
+    text-align: center;
+}
+
+.text-spot-5 {
+    width: 10%;
+    text-align: center;
+}
+
+/* End of Output */
+
+/* Start of Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Add padding to the top and bottom */
+    border-bottom: 0.2vh solid #999;
+    border-left: 0.2vh solid #999;
+    border-right: 0.2vh solid #999;
+    border-radius: 0 0 0.8vh 0.8vh;
+}
+
+.pagination button {
+    background-color: #333;
+    color: #fff;
+    padding: 1vh 2vh;
+    cursor: pointer;
+    font-size: 1.5vh;
+    margin: 0 1.5vh 1vh;
+    min-width: 0.5vh; /* Add a fixed width */
+    max-width: 80px; /* Add a fixed width */
+    width: 80px; /* Add a fixed width */
+    text-align: center; /* Make sure the text is centered */
+    border-radius: 0.8vh;
+    border: none;
+}
+
+
+.pagination button:hover {
+    background-color: #555;
+}
+
+
+/* End of Pagination */
+
+
+
+
